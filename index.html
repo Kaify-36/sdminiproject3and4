@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Photo Gallery</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h1>📷 Photo Gallery</h1>
+    <p>Search photos by photographer and save your favourites.</p>
+  </header>
+
+  <main>
+    <section class="controls">
+      <input type="text" id="searchInput" placeholder="Search by photographer name..." />
+    </section>
+
+    <h2>Photos</h2>
+    <div id="status" class="status"></div>
+    <div id="gallery" class="grid"></div>
+
+    <div class="pager">
+      <button id="prevBtn">« Prev</button>
+      <span id="pageInfo"></span>
+      <button id="nextBtn">Next »</button>
+    </div>
+
+    <h2>⭐ Favourites (<span id="favCount">0</span>)</h2>
+    <button id="clearFavs" class="clear-btn">Clear all favourites</button>
+    <div id="favGallery" class="grid"></div>
+  </main>
+
+  <footer>CSE-2340 Software Development I – MP3/MP4</footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
